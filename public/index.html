@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>React App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <style>
+      html,
+      body {
+        background: #cdcdcd;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      header,
+      section,
+      footer {
+        padding: 16px;
+      }
+
+      header,
+      footer {
+        background: #000;
+      }
+
+      section {
+        flex: 1;
+      }
+
+      form {
+        border: 1px solid black;
+        background: white;
+        padding: 32px;
+      }
+
+      main {
+        display: flex;
+        /*flex-direction: column;*/
+        flex: 1;
+      }
+
+      [name="login"] {
+        border: 10px solid green;
+      }
+
+      [name="forgot-password"] {
+        border: 10px solid fuchsia;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section name="login">
+        <h1>Login</h1>
+        <form autocomplete="off">
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email" id="email" name="email" required minlength="6" maxlength="512" class="u-full-width"
+              placeholder="Email Address"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password" id="password" name="password" minlength="7" required maxlength="128"
+              class="u-full-width" placeholder="Password"
+            />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea name="description" cols="30" rows="40" class="u-full-width" id="description"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="button-primary">Login</button>
+          </div>
+        </form>
+      </section>
+
+      <section name="forgot-password">
+        <h1>Forgot Password</h1>
+        <form autocomplete="off">
+          <div>
+            <label for="emailForgotten">Email Address</label>
+            <input type="email" id="emailForgotten" name="email" required minlength="6" maxlength="512"
+                   class="u-full-width" placeholder="Email Address" />
+          </div>
+          <div>
+            <button type="submit" class="button-primary">Login</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <nav>
+        <a href="https://github.com/tylergarlick">GitHub</a>
+      </nav>
+    </footer>
+  </body>
+
+</html>
